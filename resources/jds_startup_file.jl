@@ -9,6 +9,9 @@ using CSV: CSV
 if isinteractive()
         println("Data science packages are allready imported")
 
+        # Plots are not showing by default, so change it
+        default(:show, true)
+
         # load Revise, or die trying
         try
             using Revise
