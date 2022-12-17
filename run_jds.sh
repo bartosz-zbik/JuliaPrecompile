@@ -16,7 +16,7 @@ PROJECT_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 # PROJECT_DIR="$HOME/local/JuliaPrecompile"
 
 
-IMAGE_PATH="$PROJECT_DIR/sys_jds__bundle.so"
+IMAGE_PATH="$PROJECT_DIR/sys_jds_bundle.so"
 STARTUP_FILE_PATH="$PROJECT_DIR/resources/jds_startup_file.jl"
 
 julia --project="$PROJECT_DIR" --sysimage "$IMAGE_PATH" --load "$STARTUP_FILE_PATH" "$@"
