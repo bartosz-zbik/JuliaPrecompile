@@ -6,14 +6,19 @@ to make a *sys image*, which helps to deal with the *time to first plot* issue.
 You would probably want to make your own version with a personalised package list.
 
 ## Usage
-First compile wanted packages by running:
+First clone this repository:
+```bash
+git clone https://github.com/bartosz-zbik/JuliaPrecompile.git
+```
+
+Then compile wanted packages by running:
 ```bash
 julia scripts/compile_jds.jl
 ```
 
 This may take a few minutes.
 
-Then add an alias or a symlink in your bin pointing to [run_jds.sh](run_jds.sh)
+Finally add an alias or a symlink in your bin pointing to [run_jds.sh](run_jds.sh)
 
 ## Versions and Package List
 Currently, there is only one version available:
